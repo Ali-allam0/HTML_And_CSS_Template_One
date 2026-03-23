@@ -1,0 +1,136 @@
+
+body{
+    overflow: hidden;
+    background-color: black;
+}
+img{
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    left: -10px;
+    top: -10px;
+    opacity: 0.9;
+}
+.login{
+    width: 750px;
+    height: fit-content;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-family: sans-serif;
+    backdrop-filter: blur(4px);
+}
+.login-1{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    height: 270px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+}
+.login-1 .inputs{
+    grid-column: 1;
+    margin-left: 0;
+}
+.login .login-1 .content{
+    padding-left: 100px;
+}
+.login-1 .inputs .email label,
+.login-1 .inputs .password label{
+    opacity: 1;
+    font-weight: bold;
+    color: white;
+}
+.login-1 .inputs .email input{
+    width: 250px;
+    padding: 10px 20px 10px 20px; 
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    outline: none;
+}
+.login-1 .inputs .password input{
+    width: 250px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: none;
+}
+.login .inputs .submit input{
+    width: 300px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 32px;
+    border: none;
+    background-color: #435b67;
+    color: white;
+    border-radius: 10px;
+}
+.login h4{
+    width: 100%;
+    background-color: #435b67;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.login .content p{
+    position: relative;
+    top: -20px;
+    right: -115px;
+    opacity: 0.5;
+    font-size: 19px;
+}
+.login .content .facebook{
+    margin-top: -17px;
+    background-color: #435b67;
+}
+.login .content .twitter{
+    background-color: #435b67;
+}
+.login .content .linkedin{
+    background-color: #435b67;
+}
+.login .content a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px 10px 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.login .login-1::before{
+    content: "";
+    width: 5px;
+    height: 250px;
+    background-color: #eee;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%);
+}
+.login .login-1::after{
+    content: "Or";
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    top: 135px;
+}
